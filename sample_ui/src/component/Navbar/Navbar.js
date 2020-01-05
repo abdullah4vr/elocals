@@ -8,8 +8,12 @@ const navbar = (props)=>{
       alt=""/></a>
      <ul className="nav navbar-nav navbar-right form-inline">
                           
-          <li><a href="/signup">Sign Up</a></li>
-          <li><a href="/login">Log In</a></li>
+    
+          <button className='btn btn-info'
+          onClick={props.cartpress}
+          style={{marginTop : '4px'}}>
+          <span className="glyphicon glyphicon-shopping-cart"      
+        ></span></button>
             
      </ul>
     </nav>

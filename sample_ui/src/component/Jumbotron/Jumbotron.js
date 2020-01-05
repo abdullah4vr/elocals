@@ -12,7 +12,7 @@ const jumbotron = (props) =>{
             <SellerInfo seller={props.seller} />
             </div>
             <div className="row">
-            <Search/>
+            <Search onChange={props.search}/>
             </div>
          </div> 
          <div className="col-lg-7" >
@@ -23,9 +23,11 @@ const jumbotron = (props) =>{
          
          <ul className="nav navbar-nav navbar-center form-inline" 
          style={{topMargin : '50px',bottomMargin : '0px',textAlign : 'center'}}>
-                          
-          <li><a href="/signup">Si</a></li>
-          <li><a href="/login">Log In</a></li>          
+
+          <li><a href="#" onClick={()=>{props.categSearch('')}}>All</a></li>
+          <li><a href="#" onClick={()=>{props.categSearch('ipad')}}>iPad</a></li>                  
+          <li><a href="#" onClick={()=>{props.categSearch('mac')}}>Mac</a></li>
+          <li><a href="#" onClick={()=>{props.categSearch('iphone')}}>iPhone</a></li>          
          </ul>
          
          </div>          

@@ -11,7 +11,7 @@ const Grid = (props) => {
          <Filters onChange={props.onChange} clear={props.clear}/>
         </div>
         <div className='col-lg-7 justify-space-between'>
-          <Products products={props.products}/>
+          <Products products={props.products} addToCart={props.addToCart}/>
         </div>
         </div>
         </div>
